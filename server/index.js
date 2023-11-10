@@ -17,10 +17,6 @@ app.use(cors());
 // DEV
 app.post("/seed", seed);
 
-app.get("/", (req, res) => {
-
-  res.status(200).send("Hello World");
-});
 // COUNTRIES
 app.get('/countries', getCountries)
 
